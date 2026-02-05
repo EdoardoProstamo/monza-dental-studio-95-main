@@ -2,14 +2,20 @@ import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { SERVICES } from "@/config/siteConfig";
 
-import serviceImplants from "@/assets/service-implants.jpg";
+import serviceImplants from "@/assets/Implantologia.jpeg";
 import serviceWhitening from "@/assets/service-whitening.jpg";
-import serviceHygiene from "@/assets/service-hygiene.jpg";
+import serviceHygiene from "@/assets/IgieneDentale.jpeg";
+import serviceOdontoiatriaConservativa from "@/assets/OdontoiatriaConservativa.jpeg";
+import serviceOdortonzia from "@/assets/Ortodonzia.jpeg";
+import serviceEndodonzia from "@/assets/Endodonzia.jpeg";
 
 const serviceImages: Record<string, string> = {
-  implants: serviceImplants,
+  "Implantologia.jpeg": serviceImplants,
+  "OdontoiatriaConservativa.jpeg": serviceOdontoiatriaConservativa,
+  "Ortodonzia.jpeg": serviceOdortonzia,
+  "Endodonzia.jpeg": serviceEndodonzia,
   whitening: serviceWhitening,
-  hygiene: serviceHygiene,
+  "IgieneDentale.jpeg": serviceHygiene,
 };
 
 export function ServicesSection() {
@@ -27,7 +33,7 @@ export function ServicesSection() {
             Cure dentali complete per tutta la famiglia
           </h2>
           <p className="text-muted-foreground">
-            Offriamo una gamma completa di trattamenti odontoiatrici, 
+            Offriamo una gamma completa di trattamenti odontoiatrici,
             dall'igiene preventiva all'implantologia avanzata.
           </p>
         </div>
@@ -42,7 +48,7 @@ export function ServicesSection() {
             >
               <div className="aspect-[4/3] overflow-hidden">
                 <img
-                  src={serviceImages[service.image] || serviceImplants}
+                  src={serviceImages[service.image]}
                   alt={`${service.title} - trattamento odontoiatrico professionale`}
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />

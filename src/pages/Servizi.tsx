@@ -3,14 +3,20 @@ import { Phone } from "lucide-react";
 import { BUSINESS_INFO } from "@/config/siteConfig";
 import { useEffect } from "react";
 
-import serviceImplants from "@/assets/service-implants.jpg";
+import serviceImplants from "@/assets/Implantologia.jpeg";
 import serviceWhitening from "@/assets/service-whitening.jpg";
-import serviceHygiene from "@/assets/service-hygiene.jpg";
+import serviceHygiene from "@/assets/IgieneDentale.jpeg";
+import serviceOdontoiatriaConservativa from "@/assets/OdontoiatriaConservativa.jpeg";
+import serviceOdortonzia from "@/assets/Ortodonzia.jpeg";
+import serviceEndodonzia from "@/assets/Endodonzia.jpeg";
 
 const serviceImages: Record<string, string> = {
-  implants: serviceImplants,
+  "Implantologia.jpeg": serviceImplants,
+  "OdontoiatriaConservativa.jpeg": serviceOdontoiatriaConservativa,
+  "Ortodonzia.jpeg": serviceOdortonzia,
+  "Endodonzia.jpeg": serviceEndodonzia,
   whitening: serviceWhitening,
-  hygiene: serviceHygiene,
+  "IgieneDentale.jpeg": serviceHygiene,
 };
 
 const Servizi = () => {
@@ -31,7 +37,7 @@ const Servizi = () => {
               Trattamenti odontoiatrici completi
             </h1>
             <p className="text-lg text-muted-foreground">
-              Offriamo una gamma completa di cure dentali per tutta la famiglia, 
+              Offriamo una gamma completa di cure dentali per tutta la famiglia,
               dalla prevenzione ai trattamenti più avanzati.
             </p>
           </div>
@@ -46,9 +52,8 @@ const Servizi = () => {
               <article
                 key={service.id}
                 id={service.id}
-                className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center animate-fade-up ${
-                  index % 2 === 1 ? "lg:flex-row-reverse" : ""
-                }`}
+                className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center animate-fade-up ${index % 2 === 1 ? "lg:flex-row-reverse" : ""
+                  }`}
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
                 {/* Image */}
@@ -91,7 +96,7 @@ const Servizi = () => {
             Hai bisogno di una consulenza?
           </h2>
           <p className="text-primary-foreground/80 mb-8 max-w-2xl mx-auto animate-fade-up" style={{ animationDelay: "0.1s" }}>
-            Contattaci per fissare un appuntamento. Il nostro team è a tua disposizione 
+            Contattaci per fissare un appuntamento. Il nostro team è a tua disposizione
             per rispondere a tutte le tue domande.
           </p>
           <a

@@ -19,7 +19,7 @@ export const BUSINESS_INFO = {
   name: "Via S. Gottardo Dental Studio",
   shortName: "Dental Studio S. Gottardo",
   category: "Studio Dentistico",
-  
+
   address: {
     street: "Via S. Gottardo, 67",
     postalCode: "20900",
@@ -28,15 +28,15 @@ export const BUSINESS_INFO = {
     country: "Italia",
     full: "Via S. Gottardo, 67 – 20900 Monza (MB), Italia",
   },
-  
+
   phone: "+39 039 367778",
   phoneDisplay: "039 367778",
-  
+
   vatNumber: "DA INSERIRE",
-  
+
   googleMapsUrl: "https://maps.google.com/?q=Via+S.+Gottardo+67+Monza+MB+Italia",
   googleReviewsUrl: "DA INSERIRE",
-  
+
   hours: [
     { day: "Lunedì", time: "09:00 – 19:00" },
     { day: "Martedì", time: "09:00 – 19:00" },
@@ -65,7 +65,7 @@ export const SERVICES = [
     id: "implantologia",
     title: "Implantologia",
     description: "Sostituzione di denti mancanti con impianti in titanio di ultima generazione per un sorriso naturale e duraturo.",
-    image: "implants",
+    image: "Implantologia.jpeg",
   },
   {
     id: "sbiancamento",
@@ -77,25 +77,25 @@ export const SERVICES = [
     id: "igiene",
     title: "Igiene e Prevenzione",
     description: "Pulizia professionale e programmi di prevenzione personalizzati per mantenere denti e gengive in salute.",
-    image: "hygiene",
+    image: "IgieneDentale.jpeg",
   },
   {
     id: "conservativa",
     title: "Odontoiatria Conservativa",
     description: "Trattamento delle carie e restauro dei denti danneggiati con materiali estetici di alta qualità.",
-    image: "general",
+    image: "OdontoiatriaConservativa.jpeg",
   },
   {
     id: "ortodonzia",
     title: "Ortodonzia",
     description: "Correzione del posizionamento dentale con apparecchi tradizionali e allineatori invisibili.",
-    image: "orthodontics",
+    image: "Ortodonzia.jpeg",
   },
   {
     id: "endodonzia",
     title: "Endodonzia",
     description: "Trattamenti canalari per salvare denti compromessi e alleviare il dolore in modo definitivo.",
-    image: "endodontics",
+    image: "Endodonzia.jpeg",
   },
 ] as const;
 
